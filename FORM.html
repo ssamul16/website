@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM LOGIN</title>
+  </head>
+  <style> 
+      table {
+        width: 100%;
+      }
+      
+      form {
+        background-color: #017d86a4;
+        padding: 20px;
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+        body {
+        background-image: url(6345959.jpg) ;
+        background-size: cover; 
+        background-repeat: no-repeat;
+        background-color: #e6f7ff;
+        margin: 0;
+        padding: 20px;
+      }
+  </style>
+  <body>
+    <form action="#">
+      <fieldset>
+        <legend>Akun</legend>
+        <table>
+          <tr>
+            <td><label for="uname">Username:</label></td>
+            <td><input type="text" id="uname" name="username" /></td>
+          </tr>
+          <tr>
+            <td><label for="pass">Password:</label></td>
+            <td><input type="password" id="pass" name="password" /></td>
+          </tr>
+          <tr>
+            <td><label for="Konfirmasi">Konfirmasi Password:</label></td>
+            <td><input type="password" id="Konfirmasi" name="Konfirmasi Password" /></td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
+
+    <form action="#">
+      <fieldset>
+        <legend>Data</legend>
+        <table>
+          <tr>
+            <td><label for="nama">Nama Lengkap:</label></td>
+            <td><input type="text" id="nama" name="Nama" /></td>
+          </tr>
+          <tr>
+            <td><label>Jenis Kelamin:</label></td>
+            <td><input type="radio" name="Jenis Kelamin" value="pria" />Pria</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="radio" name="Jenis Kelamin" value="perempuan" />Perempuan</td>
+          </tr>
+          <tr>
+            <td><label>layanan tambahan:</label></td>
+            <td><input type="checkbox" name="extra bagasi" value="extra bagasi" />extra bagasi</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="checkbox" name="kursi dengan tv" value="kursi dengan tv" />kursi dengan tv</td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><input type="checkbox" name="akses lounge" value="akses lounge" />akses lounge</td>
+          </tr>
+          <tr>
+            <td>Tujuan Penerbangan:</td>
+            <td>
+              <select name="tujuan penerbangan">
+                <option value="Singapore">Singapura</option>
+                <option value="Thailand">Thailand</option>
+                <option value="China">China</option>
+                <option value="Jepang">Jepang</option>
+                <option value="Kamboja">Kamboja</option>
+                <option value="India">India</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="alamat">Alamat:</label></td>
+            <td>
+              <textarea name="alamat" id="alamat" rows="5" cols="20">masukkan alamat</textarea>
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+      <button type="beli">Beli</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>

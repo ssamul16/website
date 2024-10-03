@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hitung diskon</title>
+  </head>
+  <body>
+    <form name="form">
+      <table>
+        <tr>
+          <td><input type="number" name="pulsa" placeholder="Nominal" /></td>
+        </tr>
+        <tr>
+          <td>
+            <span>
+              <input
+                type="radio"
+                id="telkomsel"
+                name="kartu"
+                value="telkomsel"
+              />
+              <label for="telkomsel">Telkomsel</label>
+            </span>
+            <span>
+              <input
+                type="radio"
+                id="indosat"
+                name="kartu"
+                value="indosat"
+              />
+              <label for="indosat">Indosat</label>
+            </span>
+            <span>
+              <input type="radio" id="xl" name="kartu" value="xl" />
+              <label for="xl">XL</label>
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" onclick="hitung()">Hitung Diskon</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+
+    <script>
+      function hitung() {
+        let kartu = document.form.kartu.value;
+        let diskon = 0;
+        let pulsa = parseInt(document.form.pulsa.value);
+        let hasil = 0;
+        
+        if (kartu === "telkomsel") {
+          diskon = 0.1;
+        } else if (kartu === "indosat") {
+          diskon = 0.05;
+        } else if (kartu === "xl") {
+          diskon = 0.02;
+        }
+
+        hasil = pulsa - pulsa * diskon;
+        alert(
+          `Anda mendapatkan diskon ${
+            diskon * 100
+          }% diskon ${kartu}, biaya : Rp ${hasil}`
+        );
+      }
+    </script>
+  </body>
+</html>
